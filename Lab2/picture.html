@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Araya Nakarun 6314110018</title>
+</head>
+<body>
+    <p>
+        
+         <!-- the <map> tag defines an image map -->
+         <map id = "picture">
+        
+         <!-- shape = "rect" indicates a rectangular -->
+         <!-- area, with coordinates for the upper-left -->
+         <!-- and lower-right corners -->
+         <area href = "form.html" shape = "rect"
+ coords = "2,123,54,143"
+ alt = "Go to the feedback form" />
+ <area href = "contact.html" shape = "rect"
+ coords = "126,122,198,143"
+ alt = "Go to the contact page" />
+ <area href = "main.html" shape = "rect"
+ coords = "3,7,61,25" alt = "Go to the homepage" /> <area href = "links.html" shape = "rect"
+ coords = "168,5,197,25"
+ alt = "Go to the links page" />
+
+ <!-- value "poly" creates a hotspot in the shape -->
+ <!-- of a polygon, defined by coords -->
+ <area shape = "poly" alt = "E-mail the Deitels"
+ coords = "162,25,154,39,158,54,169,51,183,39,161,26"
+ href = "mailto:deitel@deitel.com" />
+
+ <!-- shape = "circle" indicates a circular -->
+ <!-- area with the given center and radius -->
+ <area href = "mailto:deitel@deitel.com"
+ shape = "circle" coords = "100,36,33"
+ alt = "E-mail the Deitels" />
+ <!-- <img src =... usemap = "#id"> indicates that the -->
+ <!-- specified image map is used with this image -->
+ <img src = "deitel.gif" width = "200" height = "144"
+ alt = "Deitel logo" usemap = "#picture" />
+ </p>
+ </map>
+</body>
+</html> 

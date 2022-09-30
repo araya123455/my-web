@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Araya Nakarun 6314110018</title>
+    <script type="text/javascript">
+        var countKey;
+        var charac = new Array(), count = new Array(), coustr = "";
+        function CountAllString() {
+            countKey = searchForm.inputVal.value;
+            searchForm.allstring.value = countKey.length;
+            var countTxtspace = 0;
+            var countTxt = 0;
+            try {
+                countTxtspace = countKey.match(/\s/g).length;
+            } catch (e) { }
+            countTxt = countKey.length - countTxtspace;
+            searchForm.spacestring.value = countTxt;
+            searchForm.totalword.value = countKey.split(" ").length;
+            searchForm.totalspace.value = countTxtspace;
+
+            for (var i = 0; i < countKey.length; i++) {
+                charac[countKey.toUpperCase().charCodeAt(i)] = countKey.charAt(i);
+                if (isNaN(count[countKey.toUpperCase().charCodeAt(i)])) count[countKey.toUpperCase().charCodeAt(i)] = 0;
+                count[countKey.toUpperCase().charCodeAt(i)]++;
+            }
+            for (var i = 0; i < charac.length; i++) {
+                if (charac[i] != undefined) coustr += charac[i] + ":" + count[i] + "\n";
+
+            }
+            searchForm.substring.value = coustr;
+        }
+
+    </script>
+</head>
+
+<body>
+    <form name="searchForm" action="">
+        <p>Enter String to count charecter
+            <input name="inputVal" type="text" />
+            <input name="search" type="button" value="Count" onclick="CountAllString()" />
+            <input name="Clear" type="reset" value="Clear">
+        </p>
+        <p>Total chars with space
+            <input style="text-align:center;" name="allstring" type="text" size="4" />
+        </p>
+        <p>Total chars with out space
+            <input style="text-align:center;" name="spacestring" type="text" size="4" />
+        </p>
+        <p>Total words
+            <input style="text-align:center;" name="totalword" type="text" size="4" />
+        </p>
+        <p>Total space
+            <input style="text-align:center;" name="totalspace" type="text" size="4" />
+        </p>
+        <p>Each char count <br />
+            <textarea style="text-align:center;" name="substring" cols="20" rows="15"></textarea>
+        </p>
+    </form>
+    <h3><a href="index_L7.html">Back</a></h3>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+/* Fig. 6.17: userstyles.css */
+
+
+/* A user stylesheet */
+
+body {
+    font-size: 20pt;
+    color: yellow;
+    background-color: #000080
+}

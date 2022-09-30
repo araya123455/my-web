@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Araya Nakarun 6314110018</title>
+    <script type="text/javascript">
+        function initializeArrays() {
+            var n1 = new Array(5);
+            var n2 = new Array();
+
+            for (var i = 0; i < n1.length; ++i)
+                n1[i] = i;
+
+            for (i = 0; i < 5; i++)
+                n2[i] = i;
+
+            outputArray("Array n1 contains",n1);
+            outputArray("Array n2 contains",n2);
+        }
+
+        function outputArray(header,theArray)
+        {
+            document.writeln("<h2>"+header+"</h2>");
+            document.writeln("<table border = \"1\" width =" +"\"100%\">" ); 
+
+            document.writeln("<thead><th width = \"100\"" +"align = \"left\">Subscript</th>" +"<th align = \"left\">Value</th></thead><tbody>" );
+
+            for(var i=0;i<theArray.length;i++)
+                document.writeln( "<tr><td>" + i + "</td><td>" +theArray[ i ] + "</td></tr>" ); 
+
+            document.writeln("</tbody></table>");
+        }
+        function bottonback(){
+            var txt = "Back";
+            document.writeln(txt.link("index_L7.html"))
+        }
+    </script>
+</head>
+
+<body onload = "initializeArrays(),bottonback()">
+</body>
+
+</html>

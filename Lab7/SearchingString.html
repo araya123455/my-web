@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Araya Nakarun 6314110018</title>
+    <script type="text/javascript">
+        var letters = "abcdefghijklmnopqrstuvwxyzabcdefghijklm";
+        function buttonPressed() {
+            searchForm.first.value =
+                letters.indexOf(searchForm.inputVal.value);
+            searchForm.last.value =
+                letters.lastIndexOf(searchForm.inputVal.value);
+            searchForm.first12.value =
+                letters.indexOf(searchForm.inputVal.value, 12);
+            searchForm.last12.value =
+                letters.lastIndexOf(
+                    searchForm.inputVal.value, 12);
+        }
+    </script>
+</head>
+
+<body>
+    <form name="searchForm" action="">
+        <h1>The string to search is: <br />
+            abcdefghijklmnopqrstuvwxyzabcdefghijklm </h1>
+        <p>Enter substring to search for
+            <input name="inputVal" type="text" />
+            <input name="search" type="button" value="Search" onclick="buttonPressed()" /><br />
+        </p>
+
+        <p>First occurrence located at index
+            <input name="first" type="text" size="5" />
+            <br />Last occurrence located at index
+            <input name="last" type="text" size="5" />
+            <br />First occurrence from index 12 located at index
+            <input name="first12" type="text" size="5" />
+            <br />Last occurrence from index 12 located at index
+            <input name="last12" type="text" size="5" />
+        </p>
+    </form>
+    <h4><a href="index_L7.html">Back</a></h4>
+</body>
+
+</html>

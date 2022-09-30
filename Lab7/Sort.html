@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Araya Nakarun 6314110018</title>
+    <script type="text/javascript">
+        function start() {
+            var a = [10, 1, 9, 2, 8, 3, 7, 4, 6, 5];
+            document.writeln("<h1>Sorting an Array</h1>");
+            outputArray("Data items in original order: ", a);
+            a.sort(compareIntegers);
+            ouotputArray("Data items in ascending order: ", a);
+        }
+
+        function outputArray(header, theArray) {
+            document.writeln("<p>" + header + theArray.join(" ") + "</p>");
+        }
+
+        function compareIntegers(value1, value2) {
+            return parseInt(value1) - parseInt(value2);
+        }
+        function bottonback(){
+            var txt = "Back";
+            document.writeln(txt.link("index_L7.html"))
+        }
+    </script>
+</head>
+
+<body onload = "start(),bottonback()">
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Araya Nakarun 6314110018</title>
+</head>
+<body>
+    <p>Access a JSON oglect dot notation</p>
+    <p id="demo"></p>
+
+    <script>
+        var myObj, x;
+        myObj = {"name": "John", "age": 30, "car": null};
+        x = myObj.name;
+        document.getElementById("demo").innerHTML = x;
+
+        x = myObj["age"];
+        document.getElementById("demo").innerHTML += " is " + x + " year old.";
+    </script>
+    <p><a href="index_L12.html">Back</a></p>
+</body>
+</html>

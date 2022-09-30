@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Araya Nakarun 6314110018</title>
+</head>
+<body>
+    <h2>Use the XMLHttpRequest to of a file.</h2>
+    <p>The contect is written in JSON format, and can easily be converted into a JavaScript object.</p>
+<p id="demo"></p>
+
+<script>
+    var xmlhttp = new XMLHtttpReques();
+    xmlhttp.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+            var myObj = JSON.parse(this.responseText);
+            document.getElementById("demo").innerHTML = myObj.name;
+        }
+    };
+    xmlhttp.open("GET", "json_demo.txt", true);
+    xmlhttp.send();
+</script>
+
+<p>Take a look at <a href="json_demo.txt" target="_blank">json_demo.txt</a></a></p>
+<p><a href="index_L12.html">Back</a></p>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Araya Nakarun 6314110018</title>
+    <script type="text/javascript">
+        var input1 =
+            window.prompt("Enter frist number", "0");
+        var input2 =
+            window.prompt("Enter second number", "0");
+        var input3 =
+            window.prompt("Enter third number", "0");
+
+        var value1 = parseFloat(input1);
+        var value2 = parseFloat(input2);
+        var value3 = parseFloat(input3);
+        var maxValue = maximum(value1, value2, value3);
+        var minValue = minimum(value1, value2, value3);
+        var averageValue = average(value1, value2, value3);
+        document.writeln("First number: " + value1 +
+            "<br />Second number: " + value2 + "<br />Third number: " + value3 +
+            "<br /><br />Average is: " + averageValue +
+            "<br/> Maximum is: " + maxValue +
+            "<br/>  Minimum is: " + minValue);
+
+        function maximum(x, y, z) {
+            return Math.max(x, Math.max(y, z));
+        }
+        function minimum(x, y, z) {
+            return Math.min(x, Math.min(y, z));
+        }
+        function average(x, y, z) {
+            var total;
+            total = (x + y + z) / 3;
+            return total;
+        }
+    </script>
+</head>
+
+<body>
+    <p>Click Refresh (or Reload) to run this script again.</p>
+    <h4><a href="index_L6.html">Back</a></h4>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Araya Nakarun 6314110018</title>
+    <script type="text/javascript">
+        function start() {
+            var a = [1, 2, 3, 4, 5];
+            document.writeln("<h2>Effects of passing entire " + "array call-by-reference</h2>");
+            document.writeln("The values of the original array are: ", a);
+
+            modifyarray(a);
+            outputArray("The values of the modified array are: ", a);
+            document.writeln("<h2>Effects of passing array " + "element call-by-value</h2>" + "a[3] before modifyElement: " + a[3]);
+
+            modifyElement(a[3]);
+            doa.writeln("<br />a[3] after modifyElement: " + a[3]);
+        }
+
+        function outputArray(header, theArray) {
+            document.writeln(header + theArray.join(" ") + "<br />");
+        }
+
+        function modifyArray(theArray) {
+            for (var j in theArray)
+                theArray[j] *= 2;
+        }
+
+        function modifyElement(e) {
+            e *= 2;
+            document.writeln("<br />value in modifyElement: " + e);
+        }
+        function bottonback() {
+            var txt = "Back";
+            document.writeln(txt.link("index_L7.html"))
+        }
+    </script>
+</head>
+
+<body onload="start(),bottonback()">
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Araya Nakarun 6314110018</title>
+    <script type="text/javascript">
+        function start() {
+            var colors = new Array("cyan", "magenta", "yellow", "black");
+            var integers1 = [2, 4, 6, 8];
+            var integers1 = [2, 4, 6, 8];
+
+            outputArray("Array colors contains", colors);
+            outputArray("Array integers1 contains", integers1);
+            outputArray("Array integers2 contains", integers2);
+        }
+        function outputArray(header, theArray) {
+            document.writeln("<h2>" + header + "</h2>");
+            document.writeln("<table border = \"1\"" + "width = \"100%\">");
+            document.writeln("<thead><th width = \"100\" " + "align = \"left\">Subscript</th>" +
+                "<th align = \"left\">Value</th></thead><tbody>");
+            for (var i = 0; i < theArray.length; i++)
+                document.writeln("<tr><td>" + i + "</td><td>" + theArray[i] + "</td></tr>");
+
+            document.writeln("</tbody></table>");
+        }
+        function bottonback() {
+            var txt = "Back";
+            document.writeln(txt.link("index_L7.html"))
+        }
+    </script>
+</head>
+
+<body onload="bottonback(), start()">
+</body>
+
+</html>

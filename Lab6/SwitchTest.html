@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Araya Nakarun 6314110018</title>
+    <script type="text/javascript">
+        var choice,
+            startTeg,
+            endTeg,
+            validInput = true,
+            listType;
+
+        choice = window.print("Select a list style:\n" + "1 (bullet), 2 (numbered), 3 (lettered)", "1");
+        switch (choice) {
+            case "1":
+                startTag = "<ul>";
+                endTag = "</ul>";
+                listType = "<h1>Bullet List</h1>";
+                break;
+            case "2":
+                startTag = "<ol>";
+                endTag = "</ol>";
+                listType = "<h1>Ordered List: Numbered</h1>";
+                break;
+            case "3":
+                startTag = "<ol type = \"A\">";
+                endTag = "</ol>";
+                listType = "<h1>Ordered List: Lettered</h1>";
+                break;
+            default:
+                validInput = false;
+        }
+
+        if (validInput == true) {
+            document.writeln(listType + startTag);
+
+            for (var i = 1; i <= 3; ++i)
+                document.writeln("<li>List item " + i + "</li>");
+            document.writeln(endTag);
+        }
+        else
+            document.writeln("Invalid choice: " + choice);
+    </script>
+</head>
+
+<body>
+    <p>Click Refresh (or Reload) to run the script again</p> 
+    <h4><a href="index_L6.html">Back</a></h4>
+</body>
+
+</html>

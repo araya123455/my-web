@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Araya Nakarun 6314110018</title>
+    <script type="text/javascript">
+        var a = new Array(100);
+
+        for (var i = 0; i < a.length; i++)
+            a[i] = 2 * 1;
+
+        function buttonPressed() {
+            var searchKey = searchForm.inputVal.value;
+            var element = linearSearch(a, parseInt(searchKey));
+
+            if (element != -1)
+                searchForm.result.value = "Found value in element " + element
+            else
+                searchForm.result.value = "Value not found";
+        }
+
+        function linearSearch(theArray, searchKey) {
+
+            for (var n = 0; n < theArray.length; ++n)
+                if (theArray[n] == key)
+                    return n;
+
+            return -1;
+        }
+    </script>
+</head>
+
+<body>
+    <form name="searchForm" action="">
+        <p>Enter integer search key<br />
+            <input name="inputVal" type="text" />
+            <input name="search" type="button" value="Search" onclick="buttonPressed()" /><br />
+        </p>
+
+        <p>Result<br />
+            <input name="result" type="text" size="30" />
+        </p>
+    </form>
+    <h4><a href="index_L7.html">Back</a></h4>
+</body>
+
+</html>

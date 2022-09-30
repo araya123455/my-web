@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googeapis.com/ajax/lips/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/lips/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <title>Araya Nakarun 6314110018</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="about/about.html">About</a>
+    </div>
+    <div class="header">
+        </br>
+        <h2>
+            </br>
+            </br>&emsp;Web Application Development</h2>
+        </br>
+    </div>
+
+    <button class="accordion"><a href="Labs.html">Exercises</a></button>
+    <div class="panel">
+        <p>we can learn to write web The basics can be learned from here.</p>
+    </div>
+
+    <button class="accordion2">&#10148; General knowledge</button>
+    
+    <button class="accordion"><a href="geography/BGgeography.html">Geography</a></button>
+    <div class="panel">
+        <p>General knowledge on the Geography.</p>
+    </div>
+
+    <button class="accordion"><a href="famousPeople/BGfamousPeople.html">Famous People</a></button>
+    <div class="panel">
+        <p>General knowledge on the Famous People.</p>
+    </div>
+
+    <button class="accordion"><a href="knowOverall/BGStartknowOverall.html">General knowledge: overall</a></button>
+    <div class="panel">
+        <p>General knowledge on the General knowledge: overall.</p>
+    </div>
+</body>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");                /*toggles between hide and show*/
+            var panel = this.nextElementSibling;           /*Returning an element*/
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
+
+</html>

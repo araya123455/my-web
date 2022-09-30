@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Araya Nakarun 6314110018</title>
+    <script type = "text/javascript">
+        var x = 1; 
+        function start(){
+            var x = 5; 
+            document.writeln( "local x in start is " + x ); 
+            functionA(); 
+            functionB();
+            functionA();
+            functionB();
+            document.writeln("<p>local x in start is " + x + "</p>" ); 
+        }
+        function functionA() {
+            var x = 25; 
+            document.writeln( "<p>local x in functionA is " + 
+                x + " after entering functionA" ); 
+                ++x; 
+                document.writeln( "<br />local x in functionA is " +
+                x + " before exiting functionA" + "</p>" );
+        }
+        function functionB() {
+            document.writeln( "<p>global variable x is " + x + " on entering functionB" );
+                X *=10;
+                document.writeln( "<br />global variable x is " + x + " on exiting functionB" + "</p>" ); 
+        }
+        function bottonback(){
+            var txt = "Back";
+            document.writeln(txt.link("index_L7.html"))
+        }
+    </script>
+</head>
+
+<body onload = "start(),bottonback()">
+</body>
+</html>
